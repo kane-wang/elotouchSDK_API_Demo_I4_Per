@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/usb_port_control_title">
+        <SwitchPreference
+            android:key="key_usb_port1"
+            android:title="USB port 1 (TYPE-A)"
+            android:summaryOn="TYPE-A USB port on board"
+            android:summaryOff="TYPE-A USB port on board"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:key="key_usb_port2"
+            android:title="USB port 2 (TYPE-C)"
+            android:summaryOn="TYPE-C USB port on board"
+            android:summaryOff="TYPE-C USB port on board"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:key="key_usb_port3"
+            android:title="USB port 3 (Micro USB)"
+            android:summaryOn="Micro-USB port at left side"
+            android:summaryOff="Micro-USB port at left side"
+            android:persistent="false" />
+    
+       <SwitchPreference
+            android:key="key_usb_port4"
+            android:title="USB port 4 (Micro USB)"
+            android:summaryOn="Micro-USB port at top side"
+            android:summaryOff="Micro-USB port at top side"
+            android:persistent="false" />
+        
+        <SwitchPreference
+            android:key="key_usb_port5"
+            android:title="USB port 5 (Micro USB)"
+            android:summaryOn="Micro-USB port at right side (near power port)"
+            android:summaryOff="Micro-USB port at right side (near power port)"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:key="key_usb_port6"
+            android:title="USB port 6 (Micro USB)"
+            android:summaryOn="Micro-USB port at bottom side"
+            android:summaryOff="Micro-USB port at bottom side"
+            android:persistent="false" />
+</PreferenceScreen>

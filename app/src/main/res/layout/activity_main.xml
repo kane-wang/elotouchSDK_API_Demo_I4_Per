@@ -1,0 +1,548 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hello_world" />
+        <Button
+            android:id="@+id/button_uart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uart_on"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/button_usb_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usb_role_host"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/container_cash_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/button_open_cd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_cd_open"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button_cd_status_di1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/di_1"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button_cd_voltage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_cd_voltage"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txt_cd_voltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="@string/cd_voltage_12v"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_cfd_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cfd_backlight_on"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/cfd_brightness_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cfd_backlight_launch_button"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnTouch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disable_ext_touch"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnTTYUSB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_ttyUSB_device"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/contGPIO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnGPIO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pull_gpio_high"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txtGPIO_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="@string/gpio_in_1"/>
+
+            <TextView
+                android:id="@+id/txtGPIO_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="@string/gpio_in_2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btn_set_brightness"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="@string/set_brightness" />
+
+            <TextView
+                android:id="@+id/txt_brightness"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_brightness_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disable_brightness_timer"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/btn_set_brightness_timer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/set_brightness_timer"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txt_brightness_timer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reset_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_to_default"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_disable_screen_timeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disable_screen_timeout"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/idle_mode_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_idle_mode"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/poe_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/poe_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/poe_settings_button"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/poe_observer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="25dp"
+                android:textSize="20sp"
+                android:text="@string/poe_observer"/>
+
+            <TextView
+                android:id="@+id/power_resouce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="25dp"
+                android:textSize="20sp"
+                android:text="@string/power_source_ac"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btn_heap_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_heap_size"
+                android:onClick="onClick_heap"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txt_heap_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="25dp"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btn_heap_growth_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_heap_growth_limit"
+                android:onClick="onClick_heap"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txt_heap_growth_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="25dp"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_led_lights_demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lights_led_settings_button"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_usb_port_demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="click to launch USB port API demo"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btn_ext_usb_port_demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="click to launch external USB port API demo"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_bcr_demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to launch BCR API demo"
+            android:layout_centerHorizontal="true" />
+            
+        <LinearLayout
+            android:id="@+id/usb_dp_mode_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <!-- USB DP concurrency mode title -->
+            <TextView
+                android:id="@+id/set_usb_dp_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/usb_dp_concurrency_settings"
+                android:textSize="20sp" />
+            <!-- USB DP concurrency mode list -->
+            <Spinner android:id="@+id/usb_dp_mode_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinner_item_content"
+                android:prompt="@string/usb_dp_concurrency_settings"
+                android:entries="@array/usb_dp_concrurrency_choices"
+                android:entryValues="@array/usb_dp_concrurrency_values"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wifi_dfs_band_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <!-- Wi-Fi DFS toggle-->
+            <Switch
+                android:id="@+id/wifi_dfs_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_dfs_settings"
+                android:textSize="20sp" />
+            <!-- Wi-Fi band title-->
+            <TextView
+                android:id="@+id/set_wifi_band"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_frequency_band_settings"
+                android:textSize="20sp" />
+            <!-- Wi-Fi band list -->
+            <Spinner android:id="@+id/wifi_band_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinner_item_content"
+                android:prompt="@string/wifi_frequency_band_settings"
+                android:entries="@array/wifi_frequency_band_choices"
+                android:entryValues="@array/wifi_frequency_band_values"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/disply_port_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <!-- Display port state view-->
+            <TextView
+                android:id="@+id/display_port_setting_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+            <!-- display port list for DP/HDMI-->
+            <Spinner android:id="@+id/display_port_setting_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinner_item_content"
+                android:prompt="@string/multi_display_port_settings"
+                android:entries="@array/multi_display_port_config_choices"
+                android:entryValues="@array/multi_display_port_config_values"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ethernet_link_mode_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <!-- Ethernet link mode for speed and duplex -->
+            <TextView android:id="@+id/ethernet_current_speed_duplex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+                
+            <TextView android:id="@+id/set_ethernet_link_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_ethernet_link_mode"
+                android:textSize="20sp"/>
+                
+            <Spinner android:id="@+id/ethernet_link_mode_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinner_item_content"
+                android:prompt="@string/change_ethernet_link_mode"
+                android:entries="@array/ethernet_link_mode_choices"
+                android:entryValues="@array/ethernet_link_mode_values"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ethernet_proxy_settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/eth_proxy_settings_launch_button"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/set_profile"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:visibility="gone">
+            <Button
+                android:id="@+id/btn_profile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_1"
+                />
+            <Button
+                android:id="@+id/btn_profile2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_2"
+                />
+            <Button
+                android:id="@+id/btn_profile3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_3"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/key_remap_title"/>
+
+        <Button
+            android:id="@+id/btn_key_remap1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key_remap_text1" />
+
+        <Button
+            android:id="@+id/btn_key_remap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key_remap_text2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/key_wakeup_title"/>
+
+        <Button
+            android:id="@+id/btn_key_wakeup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key_wakeup_text1" />
+
+        <Button
+            android:id="@+id/btn_key_wakeup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key_wakeup_text2" />
+
+        <LinearLayout
+            android:id="@+id/external_led_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView android:id="@+id/set_external_led_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/external_led_onoff"
+                android:textSize="20sp"/>
+
+            <Spinner android:id="@+id/external_led_mode_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinner_item_content"
+                android:prompt="@string/external_led_onoff"
+                android:entries="@array/external_led_mode_choices"
+                android:entryValues="@array/external_led_mode_values"
+                />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/gms_restricted_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/gms_restrict_settings"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/touch_through_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/touch_through_settings"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/screen_density_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/set_screen_density"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_density_title"
+                android:textSize="20sp" />
+            <Spinner android:id="@+id/screen_density_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/spinner_item_content"
+                android:prompt="@string/screen_density_title"
+                android:entries="@array/screen_density_choices"
+                android:entryValues="@array/screen_density_values"
+                />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/usb_debug_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/usb_debug_mode_settings"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

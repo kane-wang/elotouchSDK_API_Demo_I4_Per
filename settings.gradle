@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='elotouchSDK_API_Demo'

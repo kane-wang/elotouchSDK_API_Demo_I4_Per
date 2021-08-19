@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+1. If customer wants to update user changeable power, 
+   please change the element "poe_safeguard_power" and "max_user_power together",
+   PLEASE DON'T MODIFY ELEMENT "poe_capacity", it is related with POE module.
+
+2. There is different power consumption for different peripheral,
+   If customer wants to custom its POE feature power for the special peripherals, 
+   please modify the element which end with "_power",
+   e.g.
+   different USB device has different power supply requirement, the power of EMV350 (Type-A) is 2.50W.
+-->
+
+<!--  
+    1. custom POE settings with these elements:
+        1) usbport1: forbid type-A USB port (port1) in PoE mode
+        2) usbport2: forbid type-C USB port (port2) in PoE mode
+        3) usbport3: forbid micro-USB port (port3) in PoE mode
+        4) usbport4: forbid micro-USB port (port4) in PoE mode
+        5) usbport5: forbid micro-USB port (port5) in PoE mode
+        6) usbport6: forbid micro-USB port (port6) in PoE mode
+        7) bt:       allow BT in PoE mode
+        8) wifi:     forbid wifi in PoE mode
+        9) gpio:     poll low GPIO output
+        10) hdmi:     forbid HDMI output
+        11) brightness: restrict screen brightness and use as default brightness (brightness_ratio=80%)
+        12) volume: restrict media volume to 50%
+    2. custom POE power with these elements:
+        1) poe_capacity: the Total PoE Output power (PLEASE DON'T MODIFY)
+        2) platform_idle_power: the platform idle power, it is the power consumption when device is idle and power supply is PoE
+        3) poe_safeguard_power: the power is used for non-POE feature, the default value is the power when camera,SD card and touch work together, 
+                        if this value is too small, maybe catch android reboot issue while POE is on
+        4) max_user_power: the max PoE power for user changeable power in PoE power manager (Total PoE Output - Platform idle Power - PoE safeguard Power)"
+        5) usb_port1_power: the power consumption of the USB device that connect to type-A USB port (port1)
+        6) usb_port2_power: the power consumption of the USB device that connect to type-C USB port (port2)
+        7) usb_port3_power: the power consumption of the USB device that connect to micro-USB port (port3)
+        8) usb_port4_power: the power consumption of the USB device that connect to micro-USB port (port4)
+        9) usb_port5_power: the power consumption of the USB device that connect to micro-USB port (port5)
+        10) usb_port6_power: the power consumption of the USB device that connect to micro-USB port (port6)
+        11) bt_power: the power consumption of bluetooth
+        12) wifi_power: the power consumption of Wi-Fi
+        11) gpio_output_power: the power consumption of GPIO output
+        12) hdmi_ouput_power: the power consumption of second display
+    -->
+
+<poecustoms>
+<!--For ELO i4_in10_std model PoE mode, please enable this record and modify it -->
+    
+    <poecustom 
+        usb_port1="0"
+        usb_port2="0"
+        usb_port3="0"
+        usb_port4="0"
+        usb_port5="0"
+        usb_port6="0"
+        bt="1"
+        wifi="0"
+        gpio_output="0"
+        hdmi_ouput="0"
+        brightness_restrict_on="1"
+        brightness_setting="206"
+        volume_restrict_on="1"
+        volume_ratio="50"
+        poe_capacity="25.50"
+        platform_idle_power="6.97"
+        poe_safeguard_power="6.72"
+        max_user_power="11.81"
+        usb_port1_power="4.76"
+        usb_port2_power="4.76"
+        usb_port3_power="2.04"
+        usb_port4_power="2.04"
+        usb_port5_power="2.04"
+        usb_port6_power="2.04"
+        bt_power="1.02"
+        wifi_power="2.12"
+        gpio_output_power="1.27"
+        hdmi_ouput_power="0.50"
+    />
+
+<!--For ELO i4_in15_std model PoE mode,please enable this record and modify it-->
+    <!--
+    <poecustom 
+        usb_port1="0"
+        usb_port2="0"
+        usb_port3="0"
+        usb_port4="0"
+        usb_port5="0"
+        usb_port6="0"
+        bt="1"
+        wifi="0"
+        gpio_output="0"
+        hdmi_ouput="0"
+        brightness_restrict_on="1"
+        brightness_setting="206"
+        volume_restrict_on="1"
+        volume_ratio="50"
+        poe_capacity="25.50"
+        platform_idle_power="7.65"
+        poe_safeguard_power="7.31"
+        max_user_power="10.54"
+        usb_port1_power="4.76"
+        usb_port2_power="4.76"
+        usb_port3_power="2.04"
+        usb_port4_power="2.04"
+        usb_port5_power="2.04"
+        usb_port6_power="2.04"
+        bt_power="1.02"
+        wifi_power="2.12"
+        gpio_output_power="1.27"
+        hdmi_ouput_power="0.50"
+    />
+    -->
+    
+<!-- For Elo-i2-22Std model PoE mode, please enable this record and modify it -->
+    <!--
+    <poecustom 
+        usb_port1="0"
+        usb_port2="0"
+        usb_port3="0"
+        usb_port4="0"
+        usb_port5="0"
+        usb_port6="0"
+        bt="1"
+        wifi="0"
+        gpio_output="0"
+        hdmi_ouput="0"
+        brightness_restrict_on="1"
+        brightness_setting="206"
+        volume_restrict_on="1"
+        volume_ratio="50"
+        poe_capacity="25.50"
+        platform_idle_power="8.48"
+        poe_safeguard_power="7.75"
+        max_user_power="9.27"
+        usb_port1_power="4.76"
+        usb_port2_power="4.76"
+        usb_port3_power="2.04"
+        usb_port4_power="2.04"
+        usb_port5_power="2.04"
+        usb_port6_power="2.04"
+        bt_power="1.02"
+        wifi_power="2.12"
+        gpio_output_power="1.27"
+        hdmi_ouput_power="0.50"
+    />
+    -->
+
+</poecustoms>

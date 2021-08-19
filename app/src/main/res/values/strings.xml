@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">ELO_SDK_API_Demo v12</string>
+    <string name="hello_world">ELO SDK API Demo</string>
+    <string name="uart_on">Click to turn UART ON</string>
+    <string name="uart_off">Click to turn UART OFF</string>
+    <string name="test_bcr">Click to Read Bar Code</string>
+    <string name="test_bcr_hint">The content scanned from BCR</string>
+    <string name="test_cd_open">Click to Open CashDrawer</string>
+    <string name="di_1">DI-1</string>
+    <string name="update_cd_voltage">Click to switch CashDrawer voltage</string>
+    <string name="cd_voltage_12v">12V</string>
+    <string name="cd_voltage_24v">24V</string>
+    <string name="test_cfd_set_line1">Click To Test CFD (Set Line 1 \- 1234567890ABCDEF)</string>
+    <string name="enable_ext_touch">Click To Enable Ext Touch</string>
+    <string name="disable_ext_touch">Click To Disable Ext Touch</string>
+    <string name="test_print_self_test">Click To Test Printer (Self Test 9600)</string>
+    <string name="test_print_self_test_2">Click To Test Printer (Self Test 19200)</string>
+    <string name="test_ttyUSB_device">Click To Test ttyUSB device (ttyUSB10)</string>
+    <string name="test_monitor_USBHub">Click To Monitor USB Hub, Reset it if Error Occurs</string>
+    <string name="test_monitor_USBHub_not">Click Not To Monitor USB Hub</string>
+    <string name="pull_gpio_high">Pull GPIO EXT HIGH</string>
+    <string name="pull_gpio_low">Pull GPIO EXT LOW</string>
+    <string name="gpio_in_1">GPIO Input 1: </string>
+    <string name="gpio_in_2">GPIO Input 2: </string>
+    <string name="gpio_value_high">HIGH</string>
+    <string name="gpio_value_low">LOW</string>
+    <string name="set_brightness">Click To set brightness (Loop change from 80% to 0% with every click)</string>
+    <string name="enable_brightness_timer">Click To enable timed brightness feature</string>
+    <string name="disable_brightness_timer">Click To disable timed brightness feature</string>
+    <string name="set_brightness_timer">Set brightness timer (Between current minute and next minute to 40%)</string>
+    <string name="reset_to_default">Reset to default for timed brightness feature</string>
+    <string name="test_idle_mode">Click to active idle mode (deactive automatically after 5s)</string>
+    <string name="usb_port_on">Click to disable usb port1</string>
+    <string name="usb_port_off">Click to enable usb port1</string>
+    <string name="poe_observer">Power source (PoE/AC): </string>
+    <string name="power_source_poe">PoE</string>
+    <string name="power_source_ac">AC</string>
+    <string name="disable_screen_timeout">Click To disable screen timeout</string>
+    <string name="enable_screen_timeout">Click To enable screen timeout</string>
+    <string name="set_usb_boost_mode">Click To change USB boost mode (Loop change from None to High with every click)</string>
+    <string name="set_heap_size">Click To set dalvik.vm.heapsize (Loop change from 256m to 1024m with every click)</string>
+    <string name="set_heap_growth_limit">Click To set dalvik.vm.heapgrowthlimit (Loop change from 96m to 384m with every click)</string>
+    <string name="change_ethernet_link_mode">Set Ethernet speed and duplex:</string>
+    <string-array name="ethernet_link_mode_choices" translatable="false">
+        <item>@string/ethernet_link_mode_auto</item>
+        <item>@string/ethernet_link_mode_10mb_half </item>
+        <item>@string/ethernet_link_mode_10mb_full</item>
+        <item>@string/ethernet_link_mode_100mb_half</item>
+        <item>@string/ethernet_link_mode_100mb_full</item>
+        <item>@string/ethernet_link_mode_1000mb_full</item>
+    </string-array>
+    <string-array name="ethernet_link_mode_values" translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+    </string-array>
+    <string name="ethernet_link_mode_auto">auto</string>
+    <string name="ethernet_link_mode_10mb_half">10Mb/Half</string>
+    <string name="ethernet_link_mode_10mb_full">10Mb/Full</string>
+    <string name="ethernet_link_mode_100mb_half">100Mb/Half</string>
+    <string name="ethernet_link_mode_100mb_full">100Mb/Full</string>
+    <string name="ethernet_link_mode_1000mb_full">1000Mb/Full</string>
+    <string name="external_led_onoff">turn on/off external led:</string>
+    <string-array name="external_led_mode_choices" translatable="false">
+        <item>@string/external_led_off</item>
+        <item>@string/external_led_green_on </item>
+        <item>@string/external_led_red_on </item>
+    </string-array>
+    <string-array name="external_led_mode_values" translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+    </string-array>
+    <string name="external_led_off">turn off LED light peripheral</string>
+    <string name="external_led_green_on">turn on green LED light peripheral</string>
+    <string name="external_led_red_on">turn on red LED light peripheral</string>
+    <!-- For POE Power Manager API demo -->
+    <string name="poe_settings_button">PoE setting demo</string>
+    <string name="poe_power_manager_settings_title">PoE power manager API demo</string>
+    <string name="poe_bluetooth_title">Bluetooth</string>
+    <string name="poe_wifi_title">WLAN</string>
+    <string name="brightness_title">Brightness</string>
+    <string name="media_volume_option_title">Media volume</string>
+    <string name="poe_gpio">GPIO</string>
+    <string name="poe_hdmi">External display</string>
+    <string name="poe_power_title">PoE power status</string>
+    <string name="poe_power_summary" formatted="false">PoE+ Limit: <xliff:g id="max">%s</xliff:g>W, User Controllable: <xliff:g id="used">%s</xliff:g>W of <xliff:g id="total">%s</xliff:g>W used</string>
+    <string name="poe_brightness_summary" formatted="false">Brightness (<xliff:g id="brighness">%s</xliff:g>, <xliff:g id="power">%s</xliff:g>W)</string>
+    <string name="poe_media_summary" formatted="false">Volume (<xliff:g id="volume">%s</xliff:g>, <xliff:g id="power">%s</xliff:g>W)</string>
+    <string name="poe_feature_onoff_summary">Allow/Disallow feature when the power source is PoE (<xliff:g id="power">%s</xliff:g>W)</string>
+    <string name="poe_restore_progress_title" >Restoring PoE settings</string>
+    <string name="poe_restore_progress_text">Please wait...</string>
+    <string name="poe_menu_restore">Restore from XML</string>
+    <string name="usb_port_control_usb_port1_micro_usb">USB Port 1 (Micro USB)</string>
+    <string name="usb_port_control_usb_port1_mini_usb">USB Port 1 (Mini USB)</string>
+    <string name="usb_port_control_usb_port1_type_a_usb">USB Port 1 (Type A USB)</string>
+    <string name="usb_port_control_usb_port2_micro_usb">USB Port 2 (Micro USB)</string>
+    <string name="usb_port_control_usb_port2_mini_usb">USB Port 2 (Mini USB)</string>
+    <string name="usb_port_control_usb_port2_type_a_usb">USB Port 2 (Type A USB)</string>
+    <string name="usb_port_control_usb_port2_type_c_usb">USB Port 2 (Type C USB)</string>
+    <string name="usb_port_control_usb_port3_micro_usb">USB Port 3 (Micro USB)</string>
+    <string name="usb_port_control_usb_port3_type_a_usb">USB Port 3 (Type A USB)</string>
+    <string name="usb_port_control_usb_port4_micro_usb">USB Port 4 (Micro USB)</string>
+    <string name="usb_port_control_usb_port4_type_a_usb">USB Port 4 (Type A USB)</string>
+    <string name="usb_port_control_usb_port5_type_a_usb">USB Port 5 (Type A USB)</string>
+    <string name="usb_port_control_usb_port5_micro_usb">USB Port 5 (Micro USB)</string>
+    <string name="usb_port_control_usb_port6_type_a_usb">USB Port 6 (Type A USB)</string>
+    <string name="usb_port_control_usb_port6_micro_usb">USB Port 6 (Micro USB)</string>
+    <string name="poe_power_overflow">Power over Ethernet (PoE) Limit Reached</string>
+    <string name="enable_uvc_camera">Click to enable UVC camera</string>
+    <string name="disable_uvc_camera">Click to disable UVC camera</string>
+    <string name="uvc_camera_warning_title">UVC camera</string>
+    <string name="uvc_camera_warning_message">Now reboot your device for settings to take effect</string>
+    <string name="lights_led_settings_button">click to launch LED lights API demo</string>
+    <string name="lights_led_settings_title">LED lights API demo</string>
+    <string name="customer_led_0">Power LED:</string>
+    <string name="customer_led_1">Funcion LED:</string>
+    <string name="indication_led">Indication LED:</string>
+    <string name="inner_light_off">Off</string>
+    <string name="inner_light_green_on">Green on</string>
+    <string name="inner_light_red_on">Red on</string>
+    <string name="inner_light_orange_on">Orange on</string>
+    <string name="inner_light_white_on">White on</string>
+    <string name="inner_light_blue_on">Blue on</string>
+    <string name="inner_light_green_flash">Green flash</string>
+    <string name="inner_light_red_flash">Red flash</string>
+    <string name="inner_light_orange_flash">Orange flash</string>
+    <string name="inner_light_white_flash">White flash</string>
+    <string name="inner_light_blue_flash">blue flash</string>
+    <string name="inner_light_green_hardware_flash">Green hardware flash</string>
+    <string name="inner_light_orange_hardware_flash">Orange hardware flash</string>
+    <string name="inner_light_white_hardware_flash">White hardware flash</string>
+    <!-- 
+        LIGHT_UI_MODE_OFF = 0;
+        LIGHT_UI_MODE_WHITE_ON = 1;
+        LIGHT_UI_MODE_GREEN_ON = 2;
+        LIGHT_UI_MODE_ORANGE_ON = 3;
+        LIGHT_UI_MODE_WHITE_FLASH = 4;
+        LIGHT_UI_MODE_GREEN_FLASH = 5;
+        LIGHT_UI_MODE_ORANGE_FLASH = 6;
+    -->
+    <string-array name="customer_led_mode_choices" translatable="false">
+        <item>@string/inner_light_off</item>
+        <item>@string/inner_light_green_on </item>
+        <item>@string/inner_light_orange_on </item>
+        <item>@string/inner_light_green_flash </item>
+        <item>@string/inner_light_orange_flash </item>
+    </string-array>
+    <string-array name="customer_led_mode_values" translatable="false">
+        <item>"0"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+    </string-array>
+    <string-array name="indication_led_mode_choices" translatable="false">
+        <item>@string/inner_light_off</item>
+        <item>@string/inner_light_white_on </item>
+        <item>@string/inner_light_orange_on </item>
+        <item>@string/inner_light_white_flash </item>
+        <item>@string/inner_light_orange_flash </item>
+    </string-array>
+    <string-array name="indication_led_mode_values" translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"6"</item>
+    </string-array>
+    <string name="set_profile">Set profile</string>
+    <string name="profile_1">Normal</string>
+    <string name="profile_2">Power Saving</string>
+    <string name="profile_3">Ultra Power Saving</string>
+    <string name="key_remap_title">Key Remap</string>
+    <string name="key_remap_text1">Set left trigger key as HOME Key</string>
+    <string name="key_remap_text2">Set right trigger key to launch Settings app</string>
+    <string name="key_remap_toast1">Success to set left trigger key as HOME Key!</string>
+    <string name="key_remap_toast2">Success to set right trigger key to launch Settings app!</string>
+    <string name="key_wakeup_title">Key Wakeup</string>
+    <string name="key_wakeup_text1">Set left trigger key wakeable</string>
+    <string name="key_wakeup_text2">Set right trigger key wakeable</string>
+    <string name="key_wakeup_toast1">Success to set left trigger key wakeable!</string>
+    <string name="key_wakeup_toast2">Success to set right trigger key wakeable!</string>
+    <!-- [+] Kelly, Add wifi frequency band settings -->
+    <string name="wifi_dfs_settings">Wi-Fi DFS:</string>
+    <string name="wifi_frequency_band_settings">Wi-Fi frequency band:</string>
+    <string-array name="wifi_frequency_band_choices">
+        <item>Auto</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_values"  translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+    </string-array>
+    <!-- [-] Kelly, Add wifi frequency band settings -->
+    <!-- [+] Kelly, [FR] Implement USB3.0/DP switch API and UI -->
+    <string name="usb_dp_concurrency_settings">USB and DP configuration</string>
+    <string-array name="usb_dp_concrurrency_choices">
+        <item>DP (4 lanes) &amp; HS-USB</item>
+        <item>SS-USB only</item>
+    </string-array>
+    <string-array name="usb_dp_concrurrency_values"  translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+    </string-array>
+    <string name="usb_dp_switch_warning_title">Change USB &amp; DP configuration?</string>
+    <!-- Warning text to user about the change USB DP configuration-->
+    <string name="usb_dp_switch_warning_message">To take affect this configuration, all USB devices will be disconnected and connected again.</string>
+    <!-- [-] Kelly, [FR] Implement USB3.0/DP switch API and UI -->
+    
+    <string name="usb_port_control_title">USB port</string>
+    <string name="usb_port_setting_title">USB port setting</string>
+    <string name="external_usb_port_setting_title">External USB port setting</string>
+    <string name="pos_hub_usb_port_setting_title">POS HUB setting</string>
+    <string name="io_hub_usb_port_setting_title">IO HUB setting</string>
+    <string name="pos_stand_hub_setting_title">POS stand HUB setting</string>
+    <string name="pos_stand_no_cfd_hub_setting_title">POS stand No CFD setting</string>
+    <string name="flip_stand_hub_setting_title">Flip stand HUB setting</string>
+    <!-- USB port settings menu-->
+    <string name="usb_port_menu_disable_all_ports">Disable all USB ports</string>
+    <string name="usb_port_menu_enable_all_ports">Enable all USB ports</string>
+    <string name="usb_port_menu_data_role">Check data role</string>
+    <string name="usb_port_menu_power_role">Check power role</string>
+    <string name="poe_not_allow">Not allowed when PoE is activated, please check PoE power manager settings</string>
+
+    <string name="gms_restrict_settings">GMS Restricted Mode: </string>
+    <string name="gms_restrict_dialog_title">GMS Restricted Mode</string>
+    <string name="gms_restrict_dialog_message">GMS Restricted Mode is changed, please reboot device to take effect.</string>
+
+    <!-- BCR demo-->  
+    <string name="output">Code Output</string>
+    <string name="ready_to_scan">Ready To Scan</string>
+    <string name="scan_tip">Use built in scanner to scan a barcode</string>
+    <string name="scan_again">You can scan another barcode now</string>
+    <string name="parameter">Parameter</string>
+    <string name="number">Number</string>
+    <string name="value">Value</string>
+    <string name="set">Set</string>
+    <string name="get">Get</string>
+
+    <string name="usb_role_device">Click to switch to USB host role</string>
+    <string name="usb_role_host">Click to switch to USB device role</string>
+
+    <string name="touch_through_settings">Touch Through Mode: </string>
+
+    <!-- [+] Kelly, [backpack] switch DP/HDMI -->
+    <string name="multi_display_port_settings">Display port</string>
+    <string-array name="multi_display_port_config_choices">
+        <item>DP</item>
+        <item>HDMI</item>
+    </string-array>
+    <string-array name="multi_display_port_config_values"  translatable="false">
+        <item>"1"</item>
+        <item>"2"</item>
+    </string-array>
+    <string name="display_port_none">none</string>
+    <string name="multi_display_port_config_summary">Primary display port: <xliff:g id="max">%s</xliff:g>, currently displaying on: <xliff:g id="used">%s</xliff:g></string>
+    <!-- [-] Kelly, [backpack] switch DP/HDMI -->
+
+    <!-- Cobbin, screen density API -->
+    <string name="screen_density_title">Screen density</string>
+    <string name="screen_density_dialog_message">Screen density setting changed, reboot device to take effect?</string>
+    <string-array name="screen_density_choices">
+        <item>160 MDPI</item>
+        <item>240 HDPI</item>
+    </string-array>
+    <string-array name="screen_density_values"  translatable="false">
+        <item>"160"</item>
+        <item>"240"</item>
+    </string-array>
+
+    <!-- Cobbin, USB debug mode API -->
+    <string name="usb_debug_mode_settings">USB debug mode</string>
+    <!-- [+] Add Ethernet Proxy settings -->
+    <string name="eth_proxy_settings_title">Ethernet proxy settings</string>
+    <string name="ethernet_settings_title">Ethernet</string>
+    <string name="eth_dev_list">Ethernet Devices:</string>
+    <string name="proxy_settings_title">Proxy</string>
+    <string name="proxy_setting">Proxy setting</string>
+    <string name="proxy_address">Proxy hostname</string>
+    <string name="proxy_port">Proxy port</string>
+    <string name="proxy_exclusionlist">Bypass proxy for</string>
+    <string name="eth_proxy_address">Proxy address</string>
+    <string name="show_need_setting">You should set the static IP, Gateway and Mask in this mode</string>
+    <string name="advanced_need_setting">You should not set the Proxy address and Proxy port null</string>
+    <string name="bypass_hint">You should put valid addresses split by \",\"</string>
+    <string name="show_connect_ethernet">Connect the Ethernet before setting the proxy.</string>
+    <string name="proxy_url_title">"PAC URL: "</string>
+    <string name="proxy_url_hint" translatable="false">https://www.example.com/proxy.pac</string>
+    <!-- HTTP proxy settings. The error if the hostname is not valid -->
+    <string name="proxy_error_invalid_host">The hostname you typed isn\u2019t valid.</string>
+    <!-- HTTP proxy settings. The error if the exclusion list is not valid -->
+    <string name="proxy_error_invalid_exclusion_list">The exclusion list you typed isn\u2019t properly formatted. Type a comma-separated list of excluded domains.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_port">You need to complete the port field.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_host_set_port">The port field must be empty if the host field is empty.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_invalid_port">The port you typed isn\u2019t valid.</string>
+    <string name="eth_menu_save">confirm</string>
+    <string name="eth_menu_cancel">cancel</string>
+    <string name="eth_proxy_settings_launch_button">Click to launch Ethernet Proxy Settings demo</string>
+    <!-- [-] Add Ethernet Proxy settings -->
+
+    <string name="cfd_backlight_launch_button">Click to open CFD brightness settings</string>
+    <string name="cfd_backlight_title">CFD brightness</string>
+    <string name="cfd_backlight_switcher_title">Turn on CFD</string>
+    <string name="cfd_backlight_switcher_summary">Turn on CFD if CFD is disabled</string>
+    <string name="cfd_backlight_sync_with_settings_app_title">Shared with Settings application</string>
+    <string name="cfd_backlight_sync_with_settings_app_summary">Update primary display and CFD backlight together</string>
+    <string name="cfd_brightness_level_summary" formatted="false">Brightness (<xliff:g id="brightness">%s</xliff:g>)</string>
+    <string name="cfd_backlight_on">Click to turn CFD ON</string>
+    <string name="cfd_backlight_off">Click to turn CFD OFF</string>
+</resources>
